@@ -1,5 +1,23 @@
 # UniPDF - PDF for Go
 
+
+Please note that this is a fork of version 3.9.0 of UniPDF which was released July 15, 2020. 
+
+As far as I understand, this is the last version that was released as AGPL and with human-readable source code.
+The newer UniPDF releases (e.g. 3.10.0 from August 2020) have turned exclusively commercial and only include obfuscated source code.
+
+As their new $1500 individual and $3000 company licenses are obviously impractical for open source projects,
+I'm archiving this here so that I can continue to use Unipdf with
+```
+go get github.com/fxtentacle/unipdf-agpl
+``` 
+in my AGPL-compatible hobby projects.
+
+If you need commercial PDF support, I, therefore, suggest that you look at their official version at
+https://github.com/unidoc/unipdf
+
+----
+
 [UniDoc](http://unidoc.io)'s UniPDF (formerly unidoc) is a PDF library for Go (golang) with capabilities for
 creating and reading, processing PDF files. The library is written and supported by 
 [FoxyUtils.com](https://foxyutils.com), where the library is used to power many of its services. 
