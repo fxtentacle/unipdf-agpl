@@ -6,7 +6,7 @@
 package basic
 
 import (
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/errors"
 )
 
 // IntSlice is the integer slice that contains panic safe methods.

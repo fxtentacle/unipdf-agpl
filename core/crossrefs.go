@@ -12,7 +12,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
 )
 
 // xrefType indicates the type of a cross-references entry which can be either regular table entry or xref object

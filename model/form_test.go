@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/internal/testutils"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/testutils"
 )
 
 // Test loading of a basic checkbox field with a merged-in annotation.

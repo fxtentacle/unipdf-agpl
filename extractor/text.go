@@ -14,12 +14,12 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/internal/textencoding"
-	"github.com/unidoc/unipdf/v3/internal/transform"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/contentstream"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/textencoding"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/transform"
+	"github.com/fxtentacle/unipdf-agpl/v3/model"
 	"golang.org/x/xerrors"
 )
 

@@ -9,10 +9,10 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/contentstream"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/model"
 )
 
 // Paragraph represents text drawn with a specified font and can wrap across lines and pages.

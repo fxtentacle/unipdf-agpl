@@ -10,13 +10,13 @@ import (
 
 	"github.com/adrg/sysfont"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
-	"github.com/unidoc/unipdf/v3/render/internal/context"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/contentstream"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/model"
+	"github.com/fxtentacle/unipdf-agpl/v3/render/internal/context"
 
-	"github.com/unidoc/unipdf/v3/internal/transform"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/transform"
 )
 
 var (

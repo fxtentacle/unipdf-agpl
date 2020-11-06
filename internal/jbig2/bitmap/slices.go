@@ -10,9 +10,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/basic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/basic"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/errors"
 )
 
 // Bitmaps is the structure that contains slice of the bitmaps and the bounding boxes.

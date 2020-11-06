@@ -11,11 +11,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/writer"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/bitmap"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/reader"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/writer"
 )
 
 // TestDecodeGenericRegion tests the decode process of the jbig2 Generic Region.

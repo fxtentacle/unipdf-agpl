@@ -12,9 +12,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/model"
 )
 
 // Creator is a wrapper around functionality for creating PDF reports and/or adding new

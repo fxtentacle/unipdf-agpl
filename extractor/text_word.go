@@ -10,8 +10,8 @@ import (
 	"math"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/model"
 	"golang.org/x/text/unicode/norm"
 )
 

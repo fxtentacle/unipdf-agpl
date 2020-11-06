@@ -6,11 +6,11 @@
 package classer
 
 import (
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/basic"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/basic"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/bitmap"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/errors"
 )
 
 // classifyRankHaus is the classification using windowed rank hausdorff metric.

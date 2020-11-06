@@ -11,12 +11,12 @@ import (
 	"math"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/bitmap"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/writer"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/bitmap"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/errors"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/reader"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/writer"
 )
 
 // PageInformationSegment represents the segment type Page Information 7.4.8.

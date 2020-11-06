@@ -8,7 +8,7 @@ package core
 import (
 	"fmt"
 
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
 )
 
 // NewEncoderFromStream creates a StreamEncoder based on the stream's dictionary.

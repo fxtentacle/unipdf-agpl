@@ -6,8 +6,8 @@
 package optimize
 
 import (
-	"github.com/unidoc/unipdf/v3/contentstream"
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/contentstream"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
 )
 
 // CleanContentstream cleans up redundant operands in content streams, including Page and XObject Form

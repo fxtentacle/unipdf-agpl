@@ -6,8 +6,8 @@
 package creator
 
 import (
-	"github.com/unidoc/unipdf/v3/contentstream/draw"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/fxtentacle/unipdf-agpl/v3/contentstream/draw"
+	"github.com/fxtentacle/unipdf-agpl/v3/model"
 )
 
 // Rectangle defines a rectangle with upper left corner at (x,y) and a specified width and height.  The rectangle

@@ -8,8 +8,8 @@ package model
 import (
 	"errors"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
 )
 
 // (Section 7.11.3 p. 102).

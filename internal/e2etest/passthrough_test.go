@@ -12,8 +12,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/model"
 )
 
 // Passthrough benchmark loads a PDF, writes back out and performs a sanity check on the output with ghostscript.

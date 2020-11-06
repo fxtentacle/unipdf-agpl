@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
 )
 
 // testAction loads an action object from object number 1 loaded from `rawText` PDF content and checks that

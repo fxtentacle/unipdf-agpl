@@ -10,8 +10,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
 )
 
 // ParseIndirectObjects parses a sequence of indirect/stream objects sequentially from a `rawpdf` text.

@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/decoder/huffman"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/decoder/huffman"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/reader"
 )
 
 // TableSegment is the model used for user defined Huffman Table Segment - see 7.4.13 and appendix B.

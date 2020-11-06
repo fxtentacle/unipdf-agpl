@@ -6,8 +6,8 @@
 package document
 
 import (
-	"github.com/unidoc/unipdf/v3/internal/jbig2/document/segments"
-	"github.com/unidoc/unipdf/v3/internal/jbig2/errors"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/document/segments"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/errors"
 )
 
 // Globals store segments that aren't associated to a page.

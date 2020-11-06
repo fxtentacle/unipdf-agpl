@@ -8,7 +8,7 @@ package crypt
 import (
 	"fmt"
 
-	"github.com/unidoc/unipdf/v3/core/security"
+	"github.com/fxtentacle/unipdf-agpl/v3/core/security"
 )
 
 var (

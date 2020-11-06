@@ -8,7 +8,7 @@ package segments
 import (
 	"math"
 
-	"github.com/unidoc/unipdf/v3/internal/jbig2/reader"
+	"github.com/fxtentacle/unipdf-agpl/v3/internal/jbig2/reader"
 )
 
 // EndOfStripe flags an end of stripe - see 7.4.9.

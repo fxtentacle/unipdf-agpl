@@ -12,8 +12,8 @@ import (
 	"sync"
 	"unicode/utf8"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/core"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/core"
 	"golang.org/x/text/encoding"
 	xtransform "golang.org/x/text/transform"
 )

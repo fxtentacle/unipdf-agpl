@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/unidoc/unipdf/v3/common"
-	"github.com/unidoc/unipdf/v3/model"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/model"
 )
 
 // wordBag is just a list of textWords in a rectangular region. It is needed for efficient

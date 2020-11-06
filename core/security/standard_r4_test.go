@@ -6,7 +6,7 @@
 package security
 
 import (
-	"github.com/unidoc/unipdf/v3/common"
+	"github.com/fxtentacle/unipdf-agpl/v3/common"
 	"testing"
 )
 
