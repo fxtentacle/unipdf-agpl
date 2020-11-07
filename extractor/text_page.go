@@ -38,7 +38,7 @@ import (
 // 3) Detect textParas arranged as cells in a table and convert each one to a textPara containing a
 //    textTable.
 // 4) Sort the textParas in reading order.
-func makeTextPage(marks []*textMark, pageSize model.PdfRectangle) paraList {
+func makeTextPage(marks []*textMark, pageSize model.PdfRectangle, performParagraphMerge bool) paraList {
 	common.Log.Trace("makeTextPage: %d elements pageSize=%.2f", len(marks), pageSize)
 	if len(marks) == 0 {
 		return nil
@@ -53,29 +53,40 @@ func makeTextPage(marks []*textMark, pageSize model.PdfRectangle) paraList {
 	// Put the word fragments into a container that facilitates the grouping of words into paragraphs.
 	pageWords := makeWordBag(words, pageSize.Ury)
 
-	// Divide the page into rectangular regions for each paragraph and creata a wordBag for each one.
-	paraWords := dividePage(pageWords, pageSize.Ury)
-	paraWords = mergeWordBags(paraWords)
+	if performParagraphMerge {
 
-	// Arrange the contents of each paragraph wordBag into lines and the lines into whole words.
-	paras := make(paraList, 0, len(paraWords))
-	for _, bag := range paraWords {
-		para := bag.arrangeText()
-		if para != nil {
+		// Divide the page into rectangular regions for each paragraph and creata a wordBag for each one.
+		paraWords := dividePage(pageWords, pageSize.Ury)
+		paraWords = mergeWordBags(paraWords)
+
+		// Arrange the contents of each paragraph wordBag into lines and the lines into whole words.
+		paras := make(paraList, 0, len(paraWords))
+		for _, bag := range paraWords {
+			para := bag.arrangeText()
+			if para != nil {
+				paras = append(paras, para)
+			}
+		}
+
+		// Find paras that are cells in tables, convert the tables to paras and remove the cell paras.
+		if len(paras) >= minTableParas {
+			paras = paras.extractTables()
+		}
+
+		// Sort the paras into reading order.
+		paras.sortReadingOrder()
+		paras.log("sorted in reading order")
+
+		return paras
+	} else {
+		paras := make(paraList, 0, len(words))
+		for _, word := range words {
+			bag := newWordBag(word, pageSize.Ury)
+			para := bag.arrangeText()
 			paras = append(paras, para)
 		}
+		return paras
 	}
-
-	// Find paras that are cells in tables, convert the tables to paras and remove the cell paras.
-	if len(paras) >= minTableParas {
-		paras = paras.extractTables()
-	}
-
-	// Sort the paras into reading order.
-	paras.sortReadingOrder()
-	paras.log("sorted in reading order")
-
-	return paras
 }
 
 // dividePage divides `pageWords`, the page wordBag, into a list of paragraph wordBags.

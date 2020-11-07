@@ -54,7 +54,7 @@ func (e *Extractor) ExtractPageText() (*PageText, int, int, error) {
 	if err != nil {
 		return nil, numChars, numMisses, err
 	}
-	pt.computeViews()
+	pt.computeViews(e.PerformParagraphMerge)
 
 	return pt, numChars, numMisses, err
 }
@@ -924,7 +924,7 @@ func (pt PageText) Tables() []TextTable {
 // `pt.viewMarks` which represent the text and marks in the order which it is read on the page.
 // The comments above the TextMark definition describe how to use the []TextMark to
 // maps substrings of the page text to locations on the PDF page.
-func (pt *PageText) computeViews() {
+func (pt *PageText) computeViews(performParagraphMerge bool) {
 	// Extract text paragraphs one orientation at a time.
 	// If there are texts with several orientations on a page then the all the text of the same
 	// orientation gets extracted togther.
@@ -938,7 +938,7 @@ func (pt *PageText) computeViews() {
 			}
 		}
 		if len(marks) > 0 {
-			parasOrient := makeTextPage(marks, pt.pageSize)
+			parasOrient := makeTextPage(marks, pt.pageSize, performParagraphMerge)
 			paras = append(paras, parasOrient...)
 			n -= len(marks)
 		}

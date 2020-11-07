@@ -31,6 +31,8 @@ type Extractor struct {
 
 	// textCount is an incrementing number used to identify XYTest objects.
 	textCount int
+
+	PerformParagraphMerge bool
 }
 
 // New returns an Extractor instance for extracting content from the input PDF page.
@@ -55,6 +57,7 @@ func New(page *model.PdfPage) (*Extractor, error) {
 		mediaBox:    *mediaBox,
 		fontCache:   map[string]fontEntry{},
 		formResults: map[string]textResult{},
+		PerformParagraphMerge: true,
 	}
 	return e, nil
 }
@@ -66,6 +69,7 @@ func NewFromContents(contents string, resources *model.PdfPageResources) (*Extra
 		resources:   resources,
 		fontCache:   map[string]fontEntry{},
 		formResults: map[string]textResult{},
+		PerformParagraphMerge: true,
 	}
 	return e, nil
 }
